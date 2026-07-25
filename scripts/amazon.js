@@ -1,30 +1,3 @@
-const products = [{
-    image : 'images/products/Guns-Images/FN FAL.jpeg',
-    name : "FN FAL",
-    rating: {
-        stars : 4.5,
-        count: 87
-    },
-    priceCents : 250000
-}, {
-    image : 'images/products/Guns-Images/MP40.JPG',
-    name : "MP40",
-    rating : {
-        stars : 4,
-        count : 56
-    },
-    priceCents : 40099
-}, {
-    image : 'images/products/Guns-Images/M1911A1.jpeg',
-    name : "M1911A1",
-    rating : {
-        stars : 4.5,
-        count : 127
-    },
-    priceCents : 53884
-}];
-
-
 let productsHTML = "";
 products.forEach((product) => {
     productsHTML += `
@@ -72,7 +45,7 @@ products.forEach((product) => {
             Added
           </div>
 
-          <button class="add-to-cart-button button-primary">
+          <button class="add-to-cart-button button-primary js-add-to-cart" data-product-name="${product.name}">
             Add to Cart
           </button>
         </div>
@@ -80,3 +53,10 @@ products.forEach((product) => {
 });
 
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
+
+document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+  button.addEventListener('click', () => {
+    const productName = button.dataset.productName;
+    // .dataset is gonna give us all the data attributes attached.
+  })
+})

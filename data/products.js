@@ -1,209 +1,199 @@
-const products = [
-  {
+const products = [{
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
-    image: "images/products/athletic-cotton-socks-6-pairs.jpg",
-    name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
+    image : 'images/products/Guns-Images/FN FAL.jpeg',
+    name : "FN FAL",
     rating: {
-      stars: 4.5,
-      count: 87
+        stars : 4.5,
+        count: 87
     },
-    priceCents: 1090,
+    priceCents : 250000,
     keywords: [
-      "socks",
-      "sports",
-      "apparel"
+      "1970",
+      "old",
+      "war"
     ]
-  },
-  {
+}, {
     id: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
-    image: "images/products/intermediate-composite-basketball.jpg",
-    name: "Intermediate Size Basketball",
-    rating: {
-      stars: 4,
-      count: 127
+    image : 'images/products/Guns-Images/MP40.JPG',
+    name : "MP40",
+    rating : {
+        stars : 4,
+        count : 56
     },
-    priceCents: 2095,
-    keywords: [
-      "sports",
-      "basketballs"
+    priceCents : 40099,
+      keywords: [
+      "1970",
+      "old",
+      "war"
     ]
-  },
-  {
+}, {
     id: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
-    image: "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
-    name: "Adults Plain Cotton T-Shirt - 2 Pack",
-    rating: {
-      stars: 4.5,
-      count: 56
+    image : 'images/products/Guns-Images/M1911A1.jpeg',
+    name : "M1911A1",
+    rating : {
+        stars : 4.5,
+        count : 127
     },
-    priceCents: 799,
+    priceCents : 53884,
     keywords: [
-      "tshirts",
-      "apparel",
-      "mens"
-    ],
-    type: "clothing",
-    sizeChartLink: "images/clothing-size-chart.png"
-  },
+      "handgun",
+      "modern"
+    ]
+},
   {
     id: "54e0eccd-8f36-462b-b68a-8182611d9add",
-    image: "images/products/black-2-slot-toaster.jpg",
-    name: "2 Slot Toaster - Black",
+    image: "images/products/Guns-Images/AK-47.jpg",
+    name: "AK-47",
     rating: {
       stars: 5,
       count: 2197
     },
     priceCents: 1899,
     keywords: [
-      "toaster",
-      "kitchen",
-      "appliances"
+      "modular",
+      "popular"
     ]
   },
   {
     id: "3ebe75dc-64d2-4137-8860-1f5a963e534b",
-    image: "images/products/6-piece-white-dinner-plate-set.jpg",
-    name: "6 Piece White Dinner Plate Set",
+    image: "images/products/Guns-Images/AR15.jpg",
+    name: "AR 15",
     rating: {
       stars: 4,
       count: 37
     },
     priceCents: 2067,
     keywords: [
-      "plates",
-      "kitchen",
-      "dining"
+      ".223/5.56",
+      "modular",
+      "modern",
+      "sporting"
     ]
   },
   {
     id: "8c9c52b5-5a19-4bcb-a5d1-158a74287c53",
-    image: "images/products/6-piece-non-stick-baking-set.webp",
-    name: "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
+    image: "images/products/Guns-Images/Barrett M82.jpg",
+    name: "Berrett M82",
     rating: {
       stars: 4.5,
       count: 175
     },
     priceCents: 3499,
     keywords: [
-      "kitchen",
-      "cookware"
+      "anti-material",
+      "semi-auto",
+      ".50-cal"
     ]
   },
   {
     id: "dd82ca78-a18b-4e2a-9250-31e67412f98d",
-    image: "images/products/plain-hooded-fleece-sweatshirt-yellow.jpg",
-    name: "Plain Hooded Fleece Sweatshirt",
+    image: "images/products/Guns-Images/Benelli M4.jpg",
+    name: "Benelli M4",
     rating: {
       stars: 4.5,
       count: 317
     },
     priceCents: 2400,
     keywords: [
-      "hoodies",
-      "sweaters",
-      "apparel"
+      "semi-auto",
+      "tactical",
+      "12-gauge"
     ]
   },
   {
     id: "77919bbe-0e56-475b-adde-4f24dfed3a04",
-    image: "images/products/luxury-tower-set-6-piece.jpg",
-    name: "Luxury Towel Set - Graphite Gray",
+    image: "images/products/Guns-Images/Bushmaster XM15.jpg",
+    name: "Bushmaster XM15",
     rating: {
       stars: 4.5,
       count: 144
     },
     priceCents: 3599,
     keywords: [
-      "bathroom",
-      "washroom",
-      "restroom",
-      "towels",
-      "bath towels"
+      ".223/5.56",
+      "modern",
+      "sporting"
     ]
   },
   {
     id: "3fdfe8d6-9a15-4979-b459-585b0d0545b9",
-    image: "images/products/liquid-laundry-detergent-plain.jpg",
-    name: "Liquid Laundry Detergent, 110 Loads, 82.5 Fl Oz",
+    image: "images/products/Guns-Images/Beretta 92FS.jpg",
+    name: "Berretta 92FS",
     rating: {
       stars: 4.5,
       count: 305
     },
     priceCents: 2899,
     keywords: [
-      "bathroom",
-      "cleaning"
+      "full-size",
+      "Italian"
     ]
   },
   {
     id: "58b4fc92-e98c-42aa-8c55-b6b79996769a",
-    image: "images/products/knit-athletic-sneakers-gray.jpg",
-    name: "Waterproof Knit Athletic Sneakers - Gray",
+    image: "images/products/Guns-Images/BerettaA400.jpg",
+    name: "Beretta A400",
     rating: {
       stars: 4,
       count: 89
     },
     priceCents: 3390,
     keywords: [
-      "shoes",
-      "running shoes",
-      "footwear"
+      "semi-auto",
+      "Italian"
     ]
   },
   {
     id: "5968897c-4d27-4872-89f6-5bcb052746d7",
-    image: "images/products/women-chiffon-beachwear-coverup-black.jpg",
-    name: "Women's Chiffon Beachwear Cover Up - Black",
+    image: "images/products/Guns-Images/Bushmaster XM15.jpg",
+    name: "Bushmaster XM15",
     rating: {
       stars: 4.5,
       count: 235
     },
     priceCents: 2070,
     keywords: [
-      "robe",
-      "swimsuit",
-      "swimming",
-      "bathing",
-      "apparel"
+      ".223/5.56",
+      "modern",
+      "sporting"
     ],
-    type: "clothing",
+    type: "rifle",
     sizeChartLink: "images/clothing-size-chart.png"
   },
   {
     id: "aad29d11-ea98-41ee-9285-b916638cac4a",
-    image: "images/products/round-sunglasses-black.jpg",
-    name: "Round Sunglasses",
+    image: "images/products/Guns-Images/CAR-15.jpg",
+    name: "CAR-15",
     rating: {
       stars: 4.5,
       count: 30
     },
     priceCents: 1560,
     keywords: [
-      "accessories",
-      "shades"
+      "modern",
+      "tactical"
     ]
   },
   {
     id: "04701903-bc79-49c6-bc11-1af7e3651358",
-    image: "images/products/women-beach-sandals.jpg",
-    name: "Women's Two Strap Buckle Sandals - Tan",
+    image: "images/products/Guns-Images/Colt_1911_Series_70-removebg-preview.png",
+    name: "Colt 1911 Series 70",
     rating: {
       stars: 4.5,
       count: 562
     },
     priceCents: 2499,
     keywords: [
-      "footwear",
-      "sandals",
-      "womens",
-      "beach",
-      "summer"
+      "handgun",
+      "single-action",
+      ".45acp",
+      "classic"
     ]
   },
   {
     id: "901eb2ca-386d-432e-82f0-6fb1ee7bf969",
-    image: "images/products/blackout-curtain-set-beige.webp",
-    name: "Blackout Curtains Set 4-Pack - Beige",
+    image: "images/products/Guns-Images/CZ 75.jpg",
+    name: "CZ 75",
     rating: {
       stars: 4.5,
       count: 232
