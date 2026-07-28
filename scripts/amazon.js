@@ -45,18 +45,38 @@ products.forEach((product) => {
             Added
           </div>
 
-          <button class="add-to-cart-button button-primary js-add-to-cart" data-product-name="${product.name}">
+          <button class="add-to-cart-button button-primary js-add-to-cart" data-product-id="${product.id}">
             Add to Cart
           </button>
         </div>
     `
+    // in the button above, we use product's id, not the name, because two products can have the same name. But ids are unique.
 });
 
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
 document.querySelectorAll('.js-add-to-cart').forEach((button) => {
   button.addEventListener('click', () => {
-    const productName = button.dataset.productName;
+    const productId = button.dataset.productId;
     // .dataset is gonna give us all the data attributes attached.
+
+    let machingItem;
+
+    cart.forEach((item) => {
+      if (productId === item.productId) {
+        machingItem = item;
+      }
+    })
+
+    if (machingItem) {
+      machingItem.quantity += 1;
+    } else {
+      cart.push({
+      productId: productId,
+      quantity: 1
+    });
+    }
+
+    console.log(cart);
   })
 })
