@@ -2,6 +2,10 @@ import {cart, addToCart} from '../data/cart.js';
 // OR import {cart as myCart} from ...
 import {products} from '../data/products.js';
 
+/*
+The main idea of JS is: 1. Save the date 2. Generate the HTML 3. Make it interactive
+*/
+
 
 let productsHTML = "";
 products.forEach((product) => {
